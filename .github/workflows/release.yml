@@ -18,6 +18,8 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
+          
+      - name: Print AWS credentials
         run: |
           echo "AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID"
           echo "AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY"
